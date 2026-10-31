@@ -1,0 +1,145 @@
+{
+  "ejecutadaEn": "2026-10-31T00:17:52.085Z",
+  "configuracion": {
+    "usuarios": 50,
+    "tareasPorUsuario": 5
+  },
+  "umbrales": {
+    "crud": {
+      "p95Ms": 500,
+      "promedioMs": 200
+    },
+    "autenticacion": {
+      "p95Ms": 1500,
+      "promedioMs": 1000
+    },
+    "tasaErrorPorcentaje": 1
+  },
+  "global": {
+    "peticiones": 550,
+    "promedioMs": 123.51,
+    "minMs": 8.18,
+    "p50Ms": 48.79,
+    "p95Ms": 603.44,
+    "p99Ms": 919.1,
+    "maxMs": 1021.77
+  },
+  "porClase": {
+    "crud": {
+      "peticiones": 450,
+      "promedioMs": 43.87,
+      "minMs": 8.18,
+      "p50Ms": 43.34,
+      "p95Ms": 80.11,
+      "p99Ms": 88.01,
+      "maxMs": 124.82
+    },
+    "autenticacion": {
+      "peticiones": 100,
+      "promedioMs": 481.92,
+      "minMs": 185.61,
+      "p50Ms": 420.83,
+      "p95Ms": 919.1,
+      "p99Ms": 960.68,
+      "maxMs": 1021.77
+    }
+  },
+  "porOperacion": {
+    "registro": {
+      "peticiones": 50,
+      "promedioMs": 579.5,
+      "minMs": 185.61,
+      "p50Ms": 569.29,
+      "p95Ms": 960.21,
+      "p99Ms": 1021.77,
+      "maxMs": 1021.77
+    },
+    "crear_tarea": {
+      "peticiones": 250,
+      "promedioMs": 45.39,
+      "minMs": 15.57,
+      "p50Ms": 44.62,
+      "p95Ms": 84.88,
+      "p99Ms": 94,
+      "maxMs": 124.82
+    },
+    "listar_tareas": {
+      "peticiones": 50,
+      "promedioMs": 43.56,
+      "minMs": 17.63,
+      "p50Ms": 46.16,
+      "p95Ms": 64.8,
+      "p99Ms": 85.25,
+      "maxMs": 85.25
+    },
+    "resumen": {
+      "peticiones": 50,
+      "promedioMs": 42.64,
+      "minMs": 18.75,
+      "p50Ms": 41.23,
+      "p95Ms": 75.17,
+      "p99Ms": 82.18,
+      "maxMs": 82.18
+    },
+    "mover_tarea": {
+      "peticiones": 50,
+      "promedioMs": 42.23,
+      "minMs": 18.4,
+      "p50Ms": 42.17,
+      "p95Ms": 75.04,
+      "p99Ms": 87.89,
+      "maxMs": 87.89
+    },
+    "editar_tarea": {
+      "peticiones": 50,
+      "promedioMs": 39.42,
+      "minMs": 8.18,
+      "p50Ms": 36.44,
+      "p95Ms": 66.24,
+      "p99Ms": 80.11,
+      "maxMs": 80.11
+    },
+    "login": {
+      "peticiones": 50,
+      "promedioMs": 384.35,
+      "minMs": 222.49,
+      "p50Ms": 357.94,
+      "p95Ms": 628.26,
+      "p99Ms": 648.02,
+      "maxMs": 648.02
+    }
+  },
+  "duracionTotalSegundos": 1.74,
+  "rendimientoPeticionesPorSegundo": 315.44,
+  "peticionesTotales": 550,
+  "peticionesConError": 0,
+  "tasaErrorPorcentaje": 0,
+  "criterios": [
+    {
+      "nombre": "p95 del CRUD de tareas <= 500ms",
+      "valor": 80.11,
+      "cumple": true
+    },
+    {
+      "nombre": "promedio del CRUD de tareas <= 200ms",
+      "valor": 43.87,
+      "cumple": true
+    },
+    {
+      "nombre": "p95 de autenticacion <= 1500ms",
+      "valor": 919.1,
+      "cumple": true
+    },
+    {
+      "nombre": "promedio de autenticacion <= 1000ms",
+      "valor": 481.92,
+      "cumple": true
+    },
+    {
+      "nombre": "tasa de error <= 1%",
+      "valor": 0,
+      "cumple": true
+    }
+  ],
+  "resultado": "APROBADA"
+}

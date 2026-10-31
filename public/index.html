@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- ============================ Autenticacion ============================ -->
+    <main id="pantalla-auth" class="auth" data-testid="pantalla-auth">
+      <section class="auth__tarjeta">
+        <h1 class="auth__marca">TaskFlow</h1>
+        <p class="auth__lema">Organiza tu trabajo en un tablero simple.</p>
+
+        <div class="pestanas" role="tablist">
+          <button
+            id="pestana-login"
+            class="pestanas__boton pestanas__boton--activo"
+            role="tab"
+            data-testid="pestana-login"
+          >
+            Iniciar sesion
+          </button>
+          <button
+            id="pestana-registro"
+            class="pestanas__boton"
+            role="tab"
+            data-testid="pestana-registro"
+          >
+            Crear cuenta
+          </button>
+        </div>
+
+        <!-- Formulario de inicio de sesion -->
+        <form id="form-login" class="formulario" data-testid="form-login" novalidate>
+          <label class="campo">
+            <span class="campo__etiqueta">Correo</span>
+            <input
+              type="email"
+              name="correo"
+              autocomplete="email"
+              data-testid="login-correo"
+              required
+            />
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Contrasena</span>
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              data-testid="login-password"
+              required
+            />
+          </label>
+          <p id="error-login" class="alerta" role="alert" data-testid="error-login" hidden></p>
+          <button type="submit" class="boton boton--primario" data-testid="boton-login">
+            Entrar
+          </button>
+        </form>
+
+        <!-- Formulario de registro -->
+        <form id="form-registro" class="formulario" data-testid="form-registro" novalidate hidden>
+          <label class="campo">
+            <span class="campo__etiqueta">Nombre</span>
+            <input type="text" name="nombre" autocomplete="name" data-testid="registro-nombre" />
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Correo</span>
+            <input type="email" name="correo" autocomplete="email" data-testid="registro-correo" />
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Contrasena</span>
+            <input
+              type="password"
+              name="password"
+              autocomplete="new-password"
+              data-testid="registro-password"
+            />
+            <span class="campo__ayuda">Minimo 8 caracteres, con al menos una letra y un numero.</span>
+          </label>
+          <p id="error-registro" class="alerta" role="alert" data-testid="error-registro" hidden></p>
+          <button type="submit" class="boton boton--primario" data-testid="boton-registro">
+            Crear cuenta
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ============================== Aplicacion ============================== -->
+    <div id="pantalla-app" class="app" data-testid="pantalla-app" hidden>
+      <header class="cabecera">
+        <h1 class="cabecera__marca">TaskFlow</h1>
+        <div class="cabecera__derecha">
+          <span class="cabecera__usuario" data-testid="usuario-actual"></span>
+          <button id="boton-logout" class="boton boton--texto" data-testid="boton-logout">
+            Salir
+          </button>
+        </div>
+      </header>
+
+      <section class="barra">
+        <form id="form-tarea" class="barra__form" data-testid="form-tarea" novalidate>
+          <input
+            type="text"
+            name="titulo"
+            class="barra__input"
+            placeholder="Nueva tarea..."
+            data-testid="nueva-tarea-titulo"
+          />
+          <select name="prioridad" class="barra__select" data-testid="nueva-tarea-prioridad">
+            <option value="baja">Baja</option>
+            <option value="media" selected>Media</option>
+            <option value="alta">Alta</option>
+          </select>
+          <input
+            type="date"
+            name="fechaVencimiento"
+            class="barra__input barra__input--fecha"
+            data-testid="nueva-tarea-fecha"
+          />
+          <button type="submit" class="boton boton--primario" data-testid="boton-agregar">
+            Agregar
+          </button>
+        </form>
+        <div class="barra__filtros">
+          <input
+            type="search"
+            id="filtro-busqueda"
+            class="barra__input"
+            placeholder="Buscar..."
+            data-testid="filtro-busqueda"
+          />
+          <select id="filtro-prioridad" class="barra__select" data-testid="filtro-prioridad">
+            <option value="">Todas las prioridades</option>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </div>
+      </section>
+
+      <p id="error-tarea" class="alerta alerta--barra" role="alert" data-testid="error-tarea" hidden></p>
+
+      <section class="tablero" data-testid="tablero">
+        <article class="columna" data-estado="pendiente" data-testid="columna-pendiente">
+          <header class="columna__cabecera">
+            <h2 class="columna__titulo">Pendientes</h2>
+            <span class="columna__conteo" data-testid="conteo-pendiente">0</span>
+          </header>
+          <div class="columna__lista" data-lista="pendiente" data-testid="lista-pendiente"></div>
+        </article>
+
+        <article class="columna" data-estado="en_progreso" data-testid="columna-en_progreso">
+          <header class="columna__cabecera">
+            <h2 class="columna__titulo">En progreso</h2>
+            <span class="columna__conteo" data-testid="conteo-en_progreso">0</span>
+          </header>
+          <div class="columna__lista" data-lista="en_progreso" data-testid="lista-en_progreso"></div>
+        </article>
+
+        <article class="columna" data-estado="completada" data-testid="columna-completada">
+          <header class="columna__cabecera">
+            <h2 class="columna__titulo">Completadas</h2>
+            <span class="columna__conteo" data-testid="conteo-completada">0</span>
+          </header>
+          <div class="columna__lista" data-lista="completada" data-testid="lista-completada"></div>
+        </article>
+      </section>
+    </div>
+
+    <!-- ============================ Dialogo de edicion ============================ -->
+    <dialog id="dialogo-editar" class="dialogo" data-testid="dialogo-editar">
+      <form id="form-editar" class="formulario" data-testid="form-editar" novalidate>
+        <h2 class="dialogo__titulo">Editar tarea</h2>
+        <input type="hidden" name="id" />
+        <label class="campo">
+          <span class="campo__etiqueta">Titulo</span>
+          <input type="text" name="titulo" data-testid="editar-titulo" />
+        </label>
+        <label class="campo">
+          <span class="campo__etiqueta">Descripcion</span>
+          <textarea name="descripcion" rows="3" data-testid="editar-descripcion"></textarea>
+        </label>
+        <div class="campo__fila">
+          <label class="campo">
+            <span class="campo__etiqueta">Estado</span>
+            <select name="estado" data-testid="editar-estado">
+              <option value="pendiente">Pendiente</option>
+              <option value="en_progreso">En progreso</option>
+              <option value="completada">Completada</option>
+            </select>
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Prioridad</span>
+            <select name="prioridad" data-testid="editar-prioridad">
+              <option value="baja">Baja</option>
+              <option value="media">Media</option>
+              <option value="alta">Alta</option>
+            </select>
+          </label>
+          <label class="campo">
+            <span class="campo__etiqueta">Vence</span>
+            <input type="date" name="fechaVencimiento" data-testid="editar-fecha" />
+          </label>
+        </div>
+        <p id="error-editar" class="alerta" role="alert" data-testid="error-editar" hidden></p>
+        <footer class="dialogo__acciones">
+          <button type="button" id="boton-cancelar" class="boton boton--texto" data-testid="boton-cancelar">
+            Cancelar
+          </button>
+          <button type="submit" class="boton boton--primario" data-testid="boton-guardar">
+            Guardar
+          </button>
+        </footer>
+      </form>
+    </dialog>
+
+    <!-- Plantilla de tarjeta de tarea -->
+    <template id="plantilla-tarea">
+      <div class="tarea" draggable="true" data-testid="tarea">
+        <div class="tarea__encabezado">
+          <span class="tarea__prioridad"></span>
+          <div class="tarea__acciones">
+            <button type="button" class="tarea__accion" data-accion="editar" title="Editar">
+              Editar
+            </button>
+            <button type="button" class="tarea__accion" data-accion="eliminar" title="Eliminar">
+              Eliminar
+            </button>
+          </div>
+        </div>
+        <p class="tarea__titulo" data-testid="tarea-titulo"></p>
+        <p class="tarea__descripcion" data-testid="tarea-descripcion"></p>
+        <footer class="tarea__pie">
+          <span class="tarea__fecha" data-testid="tarea-fecha"></span>
+          <select class="tarea__mover" data-accion="mover" data-testid="tarea-mover" title="Mover a">
+            <option value="pendiente">Pendientes</option>
+            <option value="en_progreso">En progreso</option>
+            <option value="completada">Completadas</option>
+          </select>
+        </footer>
+      </div>
+    </template>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

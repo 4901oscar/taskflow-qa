@@ -1,0 +1,36 @@
+{
+  "name": "taskflow-qa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TaskFlow - Gestor de tareas con plan de aseguramiento de calidad",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:seguridad": "vitest run tests/seguridad",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:reporte-e2e": "playwright show-report evidencias/playwright-report",
+    "test:rendimiento": "node tests/performance/carga.js",
+    "test:regresion": "npm run test:coverage && npm run test:e2e",
+    "test:todo": "npm run test:coverage && npm run test:e2e && npm run test:rendimiento",
+    "metricas": "node scripts/metricas.js"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@vitest/coverage-v8": "2.1.8",
+    "supertest": "7.0.0",
+    "vitest": "2.1.8"
+  }
+}

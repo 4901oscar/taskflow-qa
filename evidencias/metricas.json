@@ -1,0 +1,88 @@
+{
+  "generadoEn": "2026-10-31T00:17:52.317Z",
+  "lineasDeCodigo": {
+    "aplicacion": 2166,
+    "pruebas": 2605,
+    "total": 4771
+  },
+  "pruebas": {
+    "unitariasEIntegracion": {
+      "total": 296,
+      "fallos": 0,
+      "exitosas": 296
+    },
+    "endToEnd": {
+      "total": 60,
+      "fallos": 0,
+      "exitosas": 60
+    },
+    "total": 356,
+    "exitosas": 356,
+    "tasaDeExitoPorcentaje": 100,
+    "relacionPruebasPorCodigo": 1.2
+  },
+  "cobertura": {
+    "lineas": 98.47,
+    "sentencias": 98.47,
+    "ramas": 93.67,
+    "funciones": 95.89
+  },
+  "defectos": {
+    "total": 8,
+    "porSeveridad": {
+      "alta": 2,
+      "media": 4,
+      "baja": 2
+    },
+    "porTipo": {
+      "funcional": 1,
+      "prueba": 4,
+      "seguridad": 1,
+      "usabilidad": 1,
+      "rendimiento": 1
+    },
+    "densidadPorKloc": 1.85,
+    "densidadPorModulo": [
+      {
+        "modulo": "tests/e2e",
+        "densidad": 6.24
+      },
+      {
+        "modulo": "src/services",
+        "densidad": 5.46
+      },
+      {
+        "modulo": "src/domain",
+        "densidad": 2.19
+      },
+      {
+        "modulo": "public",
+        "densidad": 1.98
+      }
+    ]
+  },
+  "rendimiento": {
+    "usuariosConcurrentes": 50,
+    "rendimientoPeticionesPorSegundo": 315.44,
+    "crud": {
+      "peticiones": 450,
+      "promedioMs": 43.87,
+      "minMs": 8.18,
+      "p50Ms": 43.34,
+      "p95Ms": 80.11,
+      "p99Ms": 88.01,
+      "maxMs": 124.82
+    },
+    "autenticacion": {
+      "peticiones": 100,
+      "promedioMs": 481.92,
+      "minMs": 185.61,
+      "p50Ms": 420.83,
+      "p95Ms": 919.1,
+      "p99Ms": 960.68,
+      "maxMs": 1021.77
+    },
+    "tasaErrorPorcentaje": 0,
+    "resultado": "APROBADA"
+  }
+}

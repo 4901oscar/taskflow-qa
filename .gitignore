@@ -1,0 +1,30 @@
+# Dependencias
+node_modules/
+
+# Base de datos de la aplicacion y de las pruebas end-to-end
+*.db
+*.db-journal
+
+# Evidencias generadas por las herramientas.
+# Se ignoran los artefactos pesados pero se conservan los reportes que
+# respaldan el informe final (ver las excepciones de mas abajo).
+evidencias/*
+!evidencias/.gitkeep
+!evidencias/vitest-junit.xml
+!evidencias/playwright-junit.xml
+!evidencias/rendimiento.json
+!evidencias/metricas.json
+
+# Sistema operativo y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Registros
+*.log
+npm-debug.log*
+
+# Enunciado del curso: material de la asignatura, no un entregable
+Web.pdf
