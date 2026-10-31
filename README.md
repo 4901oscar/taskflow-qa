@@ -18,7 +18,7 @@ Autor: Oscar Rivera · Octubre de 2026
 | Cobertura de ramas | 93.67 % |
 | Defectos encontrados y corregidos | 8 |
 | Densidad de defectos | 1.85 por KLOC |
-| Rendimiento | 315 peticiones/s con 50 usuarios concurrentes |
+| Rendimiento | 300 peticiones/s con 50 usuarios concurrentes |
 | Duración de la suite completa | ~40 segundos |
 
 ---

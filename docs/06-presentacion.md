@@ -203,8 +203,8 @@ inviable el descifrado por fuerza bruta si roban la base de datos.
 
 | Clase | p95 | Medido | Estado |
 |---|---|---|---|
-| CRUD de tareas | ≤ 500 ms | 80 ms | CUMPLE |
-| Autenticación | ≤ 1500 ms | 919 ms | CUMPLE |
+| CRUD de tareas | ≤ 500 ms | 88 ms | CUMPLE |
+| Autenticación | ≤ 1500 ms | 975 ms | CUMPLE |
 
 > **Para decir:** "Un umbral global mezclaba el alta de usuarios con la lectura
 > del tablero y daba un p95 dominado por scrypt. Promediar operaciones de

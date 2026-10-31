@@ -1,5 +1,5 @@
 {
-  "generadoEn": "2026-10-31T00:17:52.317Z",
+  "generadoEn": "2026-10-31T04:21:03.797Z",
   "lineasDeCodigo": {
     "aplicacion": 2166,
     "pruebas": 2605,
@@ -63,24 +63,24 @@
   },
   "rendimiento": {
     "usuariosConcurrentes": 50,
-    "rendimientoPeticionesPorSegundo": 315.44,
+    "rendimientoPeticionesPorSegundo": 300.11,
     "crud": {
       "peticiones": 450,
-      "promedioMs": 43.87,
-      "minMs": 8.18,
-      "p50Ms": 43.34,
-      "p95Ms": 80.11,
-      "p99Ms": 88.01,
-      "maxMs": 124.82
+      "promedioMs": 63.31,
+      "minMs": 8.32,
+      "p50Ms": 66.81,
+      "p95Ms": 87.87,
+      "p99Ms": 118.03,
+      "maxMs": 119.95
     },
     "autenticacion": {
       "peticiones": 100,
-      "promedioMs": 481.92,
-      "minMs": 185.61,
-      "p50Ms": 420.83,
-      "p95Ms": 919.1,
-      "p99Ms": 960.68,
-      "maxMs": 1021.77
+      "promedioMs": 437.49,
+      "minMs": 112.02,
+      "p50Ms": 327.44,
+      "p95Ms": 975.24,
+      "p99Ms": 1062.41,
+      "maxMs": 1062.7
     },
     "tasaErrorPorcentaje": 0,
     "resultado": "APROBADA"

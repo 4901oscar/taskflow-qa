@@ -1,615 +1,615 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="296" failures="0" errors="0" time="5.235">
-    <testsuite name="tests/unit/limitador.test.js" timestamp="2026-10-31T00:20:43.790Z" hostname="Oscar" tests="7" failures="0" errors="0" skipped="0" time="0.0081056">
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-055: permite los intentos dentro del limite" time="0.0020699">
+<testsuites name="vitest tests" tests="296" failures="0" errors="0" time="8.809">
+    <testsuite name="tests/unit/limitador.test.js" timestamp="2026-10-31T03:48:33.895Z" hostname="Oscar" tests="7" failures="0" errors="0" skipped="0" time="0.0151003">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-055: permite los intentos dentro del limite" time="0.003852">
         </testcase>
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-056: bloquea al superar el limite" time="0.0004165">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-056: bloquea al superar el limite" time="0.0006113">
         </testcase>
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-057: cuenta cada clave de forma independiente" time="0.0003987">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-057: cuenta cada clave de forma independiente" time="0.0004077">
         </testcase>
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-058: olvida los intentos al expirar la ventana de tiempo" time="0.0026525">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-058: olvida los intentos al expirar la ventana de tiempo" time="0.0054506">
         </testcase>
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-059: reiniciar libera la clave de inmediato" time="0.0003397">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; CP-U-059: reiniciar libera la clave de inmediato" time="0.0006426">
         </testcase>
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; informa cuantos intentos quedan disponibles" time="0.0003621">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; informa cuantos intentos quedan disponibles" time="0.0005486">
         </testcase>
-        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; limpiar vacia todas las claves registradas" time="0.0003194">
-        </testcase>
-    </testsuite>
-    <testsuite name="tests/unit/metricas.test.js" timestamp="2026-10-31T00:20:43.793Z" hostname="Oscar" tests="17" failures="0" errors="0" skipped="0" time="0.011873">
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-039: calcula los defectos por cada 1000 lineas" time="0.002296">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-040: devuelve 0 cuando no hay lineas de codigo" time="0.0003464">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; redondea a dos decimales" time="0.0002843">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-041: rechaza parametros negativos" time="0.0014925">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-042: rechaza parametros no numericos" time="0.0006284">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; CP-U-043: calcula el porcentaje de casos exitosos" time="0.0002811">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; devuelve 0 cuando no se ejecuto ningun caso" time="0.0001863">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; devuelve 100 cuando todos los casos pasan" time="0.0001978">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; CP-U-044: rechaza mas exitos que el total ejecutado" time="0.0003602">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="densidadPorModulo &gt; CP-U-045: ordena los modulos de mayor a menor densidad de defectos" time="0.0012855">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="densidadPorModulo &gt; devuelve un arreglo vacio si no hay modulos" time="0.0003222">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; CP-U-046: calcula el percentil 95" time="0.0003352">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; calcula la mediana (percentil 50)" time="0.0002209">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; devuelve el minimo para el percentil 0" time="0.0001846">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; no depende del orden de entrada" time="0.0002023">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; rechaza una muestra vacia" time="0.0003332">
-        </testcase>
-        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; rechaza un percentil fuera del rango 0-100" time="0.000579">
+        <testcase classname="tests/unit/limitador.test.js" name="crearLimitador &gt; limpiar vacia todas las claves registradas" time="0.0003879">
         </testcase>
     </testsuite>
-    <testsuite name="tests/unit/ordenamiento.test.js" timestamp="2026-10-31T00:20:43.799Z" hostname="Oscar" tests="22" failures="0" errors="0" skipped="0" time="0.0160893">
-        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; CP-U-027: agrupa las tareas en las tres columnas" time="0.004308">
+    <testsuite name="tests/unit/metricas.test.js" timestamp="2026-10-31T03:48:33.900Z" hostname="Oscar" tests="17" failures="0" errors="0" skipped="0" time="0.0142611">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-039: calcula los defectos por cada 1000 lineas" time="0.0025021">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; CP-U-028: ordena cada columna por posicion" time="0.000473">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-040: devuelve 0 cuando no hay lineas de codigo" time="0.000343">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; desempata por id cuando dos tareas comparten posicion" time="0.0003615">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; redondea a dos decimales" time="0.0004967">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; devuelve las tres columnas vacias para un tablero sin tareas" time="0.0003294">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-041: rechaza parametros negativos" time="0.0019793">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="compactarPosiciones &gt; CP-U-029: renumera las posiciones desde cero y sin huecos" time="0.0004368">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeDefectos &gt; CP-U-042: rechaza parametros no numericos" time="0.0006276">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="compactarPosiciones &gt; no modifica el arreglo original" time="0.0004839">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; CP-U-043: calcula el porcentaje de casos exitosos" time="0.0003219">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-030: mueve una tarea a otra columna en la posicion indicada" time="0.0006498">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; devuelve 0 cuando no se ejecuto ningun caso" time="0.000207">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-031: compacta la columna de origen al retirar la tarea" time="0.0004305">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; devuelve 100 cuando todos los casos pasan" time="0.0002507">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-032: reordena dentro de la misma columna sin duplicar la tarea" time="0.00068">
+        <testcase classname="tests/unit/metricas.test.js" name="tasaDeExito &gt; CP-U-044: rechaza mas exitos que el total ejecutado" time="0.0004869">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-033: mover una tarea a su misma posicion deja el tablero igual" time="0.0003162">
+        <testcase classname="tests/unit/metricas.test.js" name="densidadPorModulo &gt; CP-U-045: ordena los modulos de mayor a menor densidad de defectos" time="0.001735">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-034: acota una posicion destino mayor que el tamano de la columna" time="0.0002588">
+        <testcase classname="tests/unit/metricas.test.js" name="densidadPorModulo &gt; devuelve un arreglo vacio si no hay modulos" time="0.000315">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-035: acota una posicion destino negativa a la primera posicion" time="0.000273">
+        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; CP-U-046: calcula el percentil 95" time="0.0004972">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-036: mueve a una columna vacia" time="0.00039">
+        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; calcula la mediana (percentil 50)" time="0.0002492">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-037: lanza error si el estado destino no existe" time="0.0012714">
+        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; devuelve el minimo para el percentil 0" time="0.0002553">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-038: lanza error si la tarea no esta en el tablero" time="0.0004303">
+        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; no depende del orden de entrada" time="0.0002091">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; conserva todas las tareas tras el movimiento" time="0.0006887">
+        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; rechaza una muestra vacia" time="0.0004221">
         </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; no deja posiciones duplicadas en ninguna columna" time="0.0003837">
-        </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; no modifica el tablero recibido (funcion pura)" time="0.0002676">
-        </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; trata una posicion no numerica como la primera posicion" time="0.0002919">
-        </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="siguientePosicion &gt; devuelve 0 para una columna vacia" time="0.000293">
-        </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="siguientePosicion &gt; devuelve la posicion siguiente a la ultima ocupada" time="0.0002844">
-        </testcase>
-        <testcase classname="tests/unit/ordenamiento.test.js" name="siguientePosicion &gt; tolera huecos en las posiciones existentes" time="0.0002632">
+        <testcase classname="tests/unit/metricas.test.js" name="percentil &gt; rechaza un percentil fuera del rango 0-100" time="0.0005725">
         </testcase>
     </testsuite>
-    <testsuite name="tests/unit/password.test.js" timestamp="2026-10-31T00:20:43.805Z" hostname="Oscar" tests="16" failures="0" errors="0" skipped="0" time="1.1332671">
-        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; CP-U-047: nunca devuelve la contrasena en texto plano" time="0.0708861">
+    <testsuite name="tests/unit/ordenamiento.test.js" timestamp="2026-10-31T03:48:33.904Z" hostname="Oscar" tests="22" failures="0" errors="0" skipped="0" time="0.017666">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; CP-U-027: agrupa las tareas en las tres columnas" time="0.0052762">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; CP-U-048: devuelve el formato sal:hash en hexadecimal" time="0.0597098">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; CP-U-028: ordena cada columna por posicion" time="0.0004068">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; CP-U-049: genera hashes distintos para la misma contrasena (sal aleatoria)" time="0.1418525">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; desempata por id cuando dos tareas comparten posicion" time="0.0003142">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; rechaza una contrasena vacia o no textual" time="0.0035574">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="agruparPorEstado &gt; devuelve las tres columnas vacias para un tablero sin tareas" time="0.0004851">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-050: acepta la contrasena correcta" time="0.1242562">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="compactarPosiciones &gt; CP-U-029: renumera las posiciones desde cero y sin huecos" time="0.000368">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-051: rechaza una contrasena incorrecta" time="0.1287288">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="compactarPosiciones &gt; no modifica el arreglo original" time="0.0003958">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; distingue mayusculas y minusculas" time="0.1245566">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-030: mueve una tarea a otra columna en la posicion indicada" time="0.0007938">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;sin-separador&quot; sin lanzar excepcion" time="0.001513">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-031: compacta la columna de origen al retirar la tarea" time="0.0003805">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;a:b:c&quot; sin lanzar excepcion" time="0.0020421">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-032: reordena dentro de la misma columna sin duplicar la tarea" time="0.0004642">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;:&quot; sin lanzar excepcion" time="0.0006563">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-033: mover una tarea a su misma posicion deja el tablero igual" time="0.0002642">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;&quot; sin lanzar excepcion" time="0.0002265">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-034: acota una posicion destino mayor que el tamano de la columna" time="0.0003685">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;abcd:00ff&quot; sin lanzar excepcion" time="0.0854891">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-035: acota una posicion destino negativa a la primera posicion" time="0.0003446">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; rechaza entradas no textuales sin lanzar excepcion" time="0.0685752">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-036: mueve a una columna vacia" time="0.0004052">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="generarToken &gt; CP-U-053: genera tokens unicos de 64 caracteres hexadecimales" time="0.0061699">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-037: lanza error si el estado destino no existe" time="0.0014434">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="Rendimiento del hash &gt; CP-U-054: el calculo no bloquea el bucle de eventos" time="0.179783">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; CP-U-038: lanza error si la tarea no esta en el tablero" time="0.0005376">
         </testcase>
-        <testcase classname="tests/unit/password.test.js" name="Rendimiento del hash &gt; varias verificaciones en paralelo devuelven el resultado correcto" time="0.1321522">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; conserva todas las tareas tras el movimiento" time="0.000613">
         </testcase>
-    </testsuite>
-    <testsuite name="tests/unit/sanitizer.test.js" timestamp="2026-10-31T00:20:43.810Z" hostname="Oscar" tests="12" failures="0" errors="0" skipped="0" time="0.0080477">
-        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-019: recorta los espacios de los extremos" time="0.0021518">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; no deja posiciones duplicadas en ninguna columna" time="0.00042">
         </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-020: colapsa los espacios internos repetidos" time="0.0002955">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; no modifica el tablero recibido (funcion pura)" time="0.0003922">
         </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-021: normaliza tabuladores y saltos de linea a un solo espacio" time="0.0002561">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="moverTarea &gt; trata una posicion no numerica como la primera posicion" time="0.0002942">
         </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-022: conserva intactos los caracteres especiales de HTML" time="0.0003761">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="siguientePosicion &gt; devuelve 0 para una columna vacia" time="0.0002821">
         </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; devuelve cadena vacia para valores nulos" time="0.000273">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="siguientePosicion &gt; devuelve la posicion siguiente a la ultima ocupada" time="0.0002304">
         </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; convierte a texto los valores no textuales" time="0.0003263">
-        </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="normalizarCorreo &gt; CP-U-023: pasa el correo a minusculas y quita espacios" time="0.0003025">
-        </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="normalizarCorreo &gt; devuelve cadena vacia para valores nulos" time="0.000294">
-        </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; CP-U-024: elimina los caracteres de control" time="0.0003975">
-        </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; CP-U-025: elimina el caracter DEL" time="0.0003478">
-        </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; CP-U-026: no altera el texto legitimo ni los signos de puntuacion" time="0.0002325">
-        </testcase>
-        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; devuelve cadena vacia para valores nulos" time="0.000286">
+        <testcase classname="tests/unit/ordenamiento.test.js" name="siguientePosicion &gt; tolera huecos en las posiciones existentes" time="0.0002179">
         </testcase>
     </testsuite>
-    <testsuite name="tests/unit/validadores.test.js" timestamp="2026-10-31T00:20:43.820Z" hostname="Oscar" tests="66" failures="0" errors="0" skipped="0" time="0.0273852">
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-001: acepta un titulo valido" time="0.003105">
+    <testsuite name="tests/unit/password.test.js" timestamp="2026-10-31T03:48:33.909Z" hostname="Oscar" tests="16" failures="0" errors="0" skipped="0" time="1.2418486">
+        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; CP-U-047: nunca devuelve la contrasena en texto plano" time="0.1037147">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-002: rechaza un titulo vacio" time="0.000529">
+        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; CP-U-048: devuelve el formato sal:hash en hexadecimal" time="0.0767251">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-003: rechaza un titulo que solo tiene espacios" time="0.0004548">
+        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; CP-U-049: genera hashes distintos para la misma contrasena (sal aleatoria)" time="0.1384807">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-004: rechaza un titulo mas corto que el minimo" time="0.0004533">
+        <testcase classname="tests/unit/password.test.js" name="hashPassword &gt; rechaza una contrasena vacia o no textual" time="0.0075657">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-005: acepta un titulo en el limite inferior (3 caracteres)" time="0.0003488">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-050: acepta la contrasena correcta" time="0.1290419">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-006: acepta un titulo en el limite superior (100 caracteres)" time="0.0003817">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-051: rechaza una contrasena incorrecta" time="0.1261553">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-007: rechaza un titulo que excede el limite superior (101 caracteres)" time="0.0003704">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; distingue mayusculas y minusculas" time="0.121034">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual null" time="0.0002324">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;sin-separador&quot; sin lanzar excepcion" time="0.0005566">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual undefined" time="0.0002116">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;a:b:c&quot; sin lanzar excepcion" time="0.0002554">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual 42" time="0.0002349">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;:&quot; sin lanzar excepcion" time="0.0001772">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual {}" time="0.0001636">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;&quot; sin lanzar excepcion" time="0.000248">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual %s" time="0.0001881">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; CP-U-052: rechaza el hash corrupto &quot;abcd:00ff&quot; sin lanzar excepcion" time="0.0595267">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-009: no cuenta los espacios de los extremos al medir la longitud" time="0.0003541">
+        <testcase classname="tests/unit/password.test.js" name="verificarPassword &gt; rechaza entradas no textuales sin lanzar excepcion" time="0.0643031">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; CP-U-010: acepta una descripcion ausente porque el campo es opcional" time="0.0003687">
+        <testcase classname="tests/unit/password.test.js" name="generarToken &gt; CP-U-053: genera tokens unicos de 64 caracteres hexadecimales" time="0.0092861">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; CP-U-011: acepta una descripcion en el limite (500 caracteres)" time="0.000235">
+        <testcase classname="tests/unit/password.test.js" name="Rendimiento del hash &gt; CP-U-054: el calculo no bloquea el bucle de eventos" time="0.247999">
         </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; CP-U-012: rechaza una descripcion que excede el limite" time="0.0003176">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; rechaza una descripcion que no es texto" time="0.0002499">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-013: acepta el estado valido pendiente" time="0.0003249">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-013: acepta el estado valido en_progreso" time="0.0001161">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-013: acepta el estado valido completada" time="0.0001219">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido archivada" time="0.0001675">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido PENDIENTE" time="0.0001512">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido en progreso" time="0.0001359">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido borrada" time="0.0001673">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; trata el estado ausente como valido para permitir el valor por defecto" time="0.0002326">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; CP-U-015: acepta la prioridad baja" time="0.0002876">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; CP-U-015: acepta la prioridad media" time="0.0001735">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; CP-U-015: acepta la prioridad alta" time="0.0003142">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; rechaza una prioridad fuera del catalogo" time="0.0002493">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-016: acepta una fecha ISO valida" time="0.0021843">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; acepta la ausencia de fecha porque el campo es opcional" time="0.0002818">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido 31/12/2026" time="0.0002514">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido 2026-13-01" time="0.0001881">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido ayer" time="0.0001501">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido 2026-1-1" time="0.0001485">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-018: rechaza una fecha que no existe en el calendario" time="0.0003054">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; acepta una tarea completa y valida" time="0.0003391">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; acumula todos los errores encontrados, no solo el primero" time="0.0016791">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto null" time="0.0002633">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto undefined" time="0.0001795">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto texto" time="0.0001953">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto 7" time="0.0001451">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; acepta el correo valido usuario@dominio.com" time="0.0006994">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; acepta el correo valido a.b+c@sub.dominio.mx" time="0.0002025">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; acepta el correo valido OSCAR@TEST.COM" time="0.0001482">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido sin-arroba" time="0.0001588">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido dos@@arrobas.com" time="0.000255">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido @sindominio.com" time="0.0002939">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido usuario@sintld" time="0.0001695">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido a@b.c" time="0.0001561">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza un correo vacio o ausente" time="0.0003252">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; acepta una contrasena que cumple todas las reglas" time="0.0006763">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena demasiado corta" time="0.0003041">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena sin numeros" time="0.0003023">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena sin letras" time="0.0002802">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena que excede el maximo" time="0.0001733">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena vacia o ausente" time="0.0001933">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; acepta un nombre valido" time="0.0002342">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; rechaza un nombre vacio" time="0.0001856">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; rechaza un nombre de un solo caracter" time="0.0001365">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; rechaza un nombre que excede el maximo" time="0.0001854">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; acepta datos de registro completos" time="0.000332">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; reporta los tres campos cuando todos son invalidos" time="0.0004296">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; rechaza la entrada no objeto null" time="0.0001654">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; rechaza la entrada no objeto undefined" time="0.0001093">
-        </testcase>
-        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; rechaza la entrada no objeto texto" time="0.0000922">
+        <testcase classname="tests/unit/password.test.js" name="Rendimiento del hash &gt; varias verificaciones en paralelo devuelven el resultado correcto" time="0.1531699">
         </testcase>
     </testsuite>
-    <testsuite name="tests/integration/autenticacion.test.js" timestamp="2026-10-31T00:20:43.848Z" hostname="Oscar" tests="25" failures="0" errors="0" skipped="0" time="1.9115667">
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-001: registra un usuario y devuelve su token de sesion" time="0.1603279">
+    <testsuite name="tests/unit/sanitizer.test.js" timestamp="2026-10-31T03:48:33.911Z" hostname="Oscar" tests="12" failures="0" errors="0" skipped="0" time="0.0094881">
+        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-019: recorta los espacios de los extremos" time="0.003552">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-002: nunca devuelve la contrasena ni su hash en la respuesta" time="0.067499">
+        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-020: colapsa los espacios internos repetidos" time="0.0006521">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-003: persiste la contrasena unicamente como hash" time="0.0831879">
+        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-021: normaliza tabuladores y saltos de linea a un solo espacio" time="0.0002924">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-004: rechaza un correo ya registrado con codigo 409" time="0.1265642">
+        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; CP-U-022: conserva intactos los caracteres especiales de HTML" time="0.0003836">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-005: trata el correo sin distinguir mayusculas al detectar duplicados" time="0.0920468">
+        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; devuelve cadena vacia para valores nulos" time="0.0003075">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-006: rechaza datos invalidos con codigo 422 y detalle por campo" time="0.0185834">
+        <testcase classname="tests/unit/sanitizer.test.js" name="limpiarTexto &gt; convierte a texto los valores no textuales" time="0.00023">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-007: rechaza un cuerpo vacio" time="0.0303976">
+        <testcase classname="tests/unit/sanitizer.test.js" name="normalizarCorreo &gt; CP-U-023: pasa el correo a minusculas y quita espacios" time="0.0002724">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-008: inicia sesion con credenciales correctas" time="0.1748506">
+        <testcase classname="tests/unit/sanitizer.test.js" name="normalizarCorreo &gt; devuelve cadena vacia para valores nulos" time="0.000251">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-009: acepta el correo escrito en mayusculas" time="0.140644">
+        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; CP-U-024: elimina los caracteres de control" time="0.0003428">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-010: rechaza una contrasena incorrecta con codigo 401" time="0.1256464">
+        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; CP-U-025: elimina el caracter DEL" time="0.0002044">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-011: devuelve el mismo mensaje para usuario inexistente y contrasena mala" time="0.1374625">
+        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; CP-U-026: no altera el texto legitimo ni los signos de puntuacion" time="0.0001935">
         </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-012: emite un token distinto en cada inicio de sesion" time="0.1738454">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-013: bloquea con codigo 429 tras exceder los intentos permitidos" time="0.2344434">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; CP-I-014: devuelve el usuario de la sesion activa" time="0.0606345">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; CP-I-015: rechaza la peticion sin token con codigo 401" time="0.0041487">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con token inexistente" time="0.0073259">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con esquema incorrecto" time="0.0058203">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con cabecera vacia" time="0.0043454">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con solo el esquema" time="0.0070641">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/logout &gt; CP-I-016: invalida el token de forma que deja de servir" time="0.0591904">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/logout &gt; no afecta las demas sesiones del mismo usuario" time="0.1664356">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; GET /api/salud responde que el servicio esta operativo" time="0.0055495">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; GET /api/catalogos expone los estados y prioridades validos" time="0.0074296">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; una ruta de API inexistente devuelve 404 en formato JSON" time="0.0070628">
-        </testcase>
-        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; un cuerpo JSON mal formado devuelve 400 y no 500" time="0.0081778">
+        <testcase classname="tests/unit/sanitizer.test.js" name="quitarCaracteresDeControl &gt; devuelve cadena vacia para valores nulos" time="0.0002271">
         </testcase>
     </testsuite>
-    <testsuite name="tests/integration/tareas.test.js" timestamp="2026-10-31T00:20:43.856Z" hostname="Oscar" tests="44" failures="0" errors="0" skipped="0" time="3.3840106">
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-017: crea una tarea con los valores por defecto" time="0.2279204">
+    <testsuite name="tests/unit/validadores.test.js" timestamp="2026-10-31T03:48:33.915Z" hostname="Oscar" tests="66" failures="0" errors="0" skipped="0" time="0.0306959">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-001: acepta un titulo valido" time="0.0037579">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-018: crea una tarea con todos los campos" time="0.0805635">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-002: rechaza un titulo vacio" time="0.0004682">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-019: rechaza una tarea con titulo vacio y devuelve 422" time="0.097367">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-003: rechaza un titulo que solo tiene espacios" time="0.0007627">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-020: rechaza un titulo que solo contiene espacios" time="0.080397">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-004: rechaza un titulo mas corto que el minimo" time="0.0004913">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-021: rechaza un estado fuera del catalogo" time="0.0985231">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-005: acepta un titulo en el limite inferior (3 caracteres)" time="0.0002636">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-022: rechaza una fecha de vencimiento mal formada" time="0.0713038">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-006: acepta un titulo en el limite superior (100 caracteres)" time="0.0002489">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-023: normaliza los espacios sobrantes del titulo" time="0.0862885">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-007: rechaza un titulo que excede el limite superior (101 caracteres)" time="0.000463">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-024: asigna posiciones consecutivas dentro de la misma columna" time="0.1118461">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual null" time="0.0004492">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-025: exige autenticacion" time="0.0718107">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual undefined" time="0.0002005">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-026: devuelve una lista vacia para un usuario nuevo" time="0.0662518">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual 42" time="0.0002334">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-027: devuelve todas las tareas del usuario" time="0.0759427">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual {}" time="0.0002066">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-028: filtra por estado" time="0.0867335">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-008: rechaza el valor no textual %s" time="0.0001843">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-029: filtra por prioridad" time="0.0721899">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTitulo &gt; CP-U-009: no cuenta los espacios de los extremos al medir la longitud" time="0.0003689">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-030: busca por texto en titulo y descripcion" time="0.0848569">
+        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; CP-U-010: acepta una descripcion ausente porque el campo es opcional" time="0.0005217">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-031: rechaza un filtro de estado invalido" time="0.0608679">
+        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; CP-U-011: acepta una descripcion en el limite (500 caracteres)" time="0.0002551">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; GET /api/tareas/resumen devuelve el conteo por columna" time="0.077868">
+        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; CP-U-012: rechaza una descripcion que excede el limite" time="0.0003406">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-032: devuelve una tarea existente" time="0.0683601">
+        <testcase classname="tests/unit/validadores.test.js" name="validarDescripcion &gt; rechaza una descripcion que no es texto" time="0.0001866">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-033: devuelve 404 para una tarea inexistente" time="0.0570556">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-013: acepta el estado valido pendiente" time="0.00031">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido abc" time="0.0643855">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-013: acepta el estado valido en_progreso" time="0.0001416">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido 0" time="0.061975">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-013: acepta el estado valido completada" time="0.0002103">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido -1" time="0.0588615">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido archivada" time="0.0002426">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido 1.5" time="0.0532884">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido PENDIENTE" time="0.0001711">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-035: edita el titulo de una tarea" time="0.0704107">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido en progreso" time="0.0001408">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-036: permite una edicion parcial sin perder los demas campos" time="0.0616107">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; CP-U-014: rechaza el estado invalido borrada" time="0.0001464">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-037: rechaza una edicion que dejaria el titulo vacio" time="0.0625597">
+        <testcase classname="tests/unit/validadores.test.js" name="validarEstado &gt; trata el estado ausente como valido para permitir el valor por defecto" time="0.0002316">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-038: al cambiar de columna coloca la tarea al final de la nueva" time="0.0772134">
+        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; CP-U-015: acepta la prioridad baja" time="0.0002885">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-039: devuelve 404 al editar una tarea inexistente" time="0.066009">
+        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; CP-U-015: acepta la prioridad media" time="0.0001419">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; actualiza la marca de tiempo de modificacion" time="0.0722894">
+        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; CP-U-015: acepta la prioridad alta" time="0.0001436">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; permite limpiar la fecha de vencimiento enviando cadena vacia" time="0.0608445">
+        <testcase classname="tests/unit/validadores.test.js" name="validarPrioridad &gt; rechaza una prioridad fuera del catalogo" time="0.00025">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-040: mueve una tarea a otra columna y devuelve el tablero completo" time="0.0565042">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-016: acepta una fecha ISO valida" time="0.0019808">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-041: reordena las tareas dentro de la misma columna" time="0.0732723">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; acepta la ausencia de fecha porque el campo es opcional" time="0.0003931">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-042: compacta la columna de origen sin dejar huecos" time="0.0664566">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido 31/12/2026" time="0.0003078">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-043: rechaza un estado destino invalido" time="0.0537287">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido 2026-13-01" time="0.0001474">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-044: devuelve 404 al mover una tarea inexistente" time="0.0552647">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido ayer" time="0.0001138">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; acota una posicion mayor que el tamano de la columna destino" time="0.0516613">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-017: rechaza el formato invalido 2026-1-1" time="0.0006155">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="DELETE /api/tareas/:id &gt; CP-I-045: elimina una tarea existente" time="0.0548236">
+        <testcase classname="tests/unit/validadores.test.js" name="validarFechaVencimiento &gt; CP-U-018: rechaza una fecha que no existe en el calendario" time="0.0004101">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="DELETE /api/tareas/:id &gt; devuelve 404 al eliminar una tarea inexistente" time="0.0469872">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; acepta una tarea completa y valida" time="0.0005141">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="DELETE /api/tareas/:id &gt; eliminar dos veces la misma tarea devuelve 404 la segunda vez" time="0.0542295">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; acumula todos los errores encontrados, no solo el primero" time="0.0030612">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-046: un usuario no ve las tareas de otro" time="0.0932968">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto null" time="0.0007076">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-047: un usuario no puede leer una tarea ajena por su id" time="0.0958518">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto undefined" time="0.0001476">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-048: un usuario no puede editar una tarea ajena" time="0.0968721">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto texto" time="0.0000966">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-049: un usuario no puede eliminar una tarea ajena" time="0.1040682">
+        <testcase classname="tests/unit/validadores.test.js" name="validarTarea &gt; rechaza la entrada no objeto 7" time="0.0000888">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-050: un usuario no puede mover una tarea ajena" time="0.1008436">
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; acepta el correo valido usuario@dominio.com" time="0.0007664">
         </testcase>
-        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; las posiciones se cuentan por usuario, no de forma global" time="0.0908142">
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; acepta el correo valido a.b+c@sub.dominio.mx" time="0.0002442">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; acepta el correo valido OSCAR@TEST.COM" time="0.0001361">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido sin-arroba" time="0.0002137">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido dos@@arrobas.com" time="0.0002248">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido @sindominio.com" time="0.0002589">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido usuario@sintld" time="0.0001488">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza el correo invalido a@b.c" time="0.0001514">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarCorreo &gt; rechaza un correo vacio o ausente" time="0.0002721">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; acepta una contrasena que cumple todas las reglas" time="0.0004024">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena demasiado corta" time="0.000304">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena sin numeros" time="0.000288">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena sin letras" time="0.000335">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena que excede el maximo" time="0.0002117">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarPassword &gt; rechaza una contrasena vacia o ausente" time="0.0002183">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; acepta un nombre valido" time="0.0002961">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; rechaza un nombre vacio" time="0.0001932">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; rechaza un nombre de un solo caracter" time="0.0001705">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarNombre &gt; rechaza un nombre que excede el maximo" time="0.0001836">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; acepta datos de registro completos" time="0.0002483">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; reporta los tres campos cuando todos son invalidos" time="0.0003574">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; rechaza la entrada no objeto null" time="0.0001479">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; rechaza la entrada no objeto undefined" time="0.0000945">
+        </testcase>
+        <testcase classname="tests/unit/validadores.test.js" name="validarRegistro &gt; rechaza la entrada no objeto texto" time="0.0000898">
         </testcase>
     </testsuite>
-    <testsuite name="tests/seguridad/inyeccion.test.js" timestamp="2026-10-31T00:20:43.871Z" hostname="Oscar" tests="43" failures="0" errors="0" skipped="0" time="3.3520968">
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos; OR &apos;1&apos;=&apos;1 en el correo" time="0.2381104">
+    <testsuite name="tests/integration/autenticacion.test.js" timestamp="2026-10-31T03:48:33.928Z" hostname="Oscar" tests="25" failures="0" errors="0" skipped="0" time="2.5622576">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-001: registra un usuario y devuelve su token de sesion" time="0.2254649">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos;; DROP TABLE tareas; -- en el correo" time="0.0940182">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-002: nunca devuelve la contrasena ni su hash en la respuesta" time="0.0779913">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga admin&apos;-- en el correo" time="0.1018283">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-003: persiste la contrasena unicamente como hash" time="0.0758317">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos; UNION SELECT token, usuario_id FROM sesiones -- en el correo" time="0.0925757">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-004: rechaza un correo ya registrado con codigo 409" time="0.1342223">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga 1&apos; OR 1=1 -- en el correo" time="0.0834329">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-005: trata el correo sin distinguir mayusculas al detectar duplicados" time="0.0750998">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- en el correo" time="0.0830318">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-006: rechaza datos invalidos con codigo 422 y detalle por campo" time="0.0079783">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos; OR &apos;&apos;=&apos; en el correo" time="0.0705403">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/registro &gt; CP-I-007: rechaza un cuerpo vacio" time="0.007803">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga \&apos;; DELETE FROM usuarios; -- en el correo" time="0.0778328">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-008: inicia sesion con credenciales correctas" time="0.1760322">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos; OR &apos;1&apos;=&apos;1 en la contrasena" time="0.1210178">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-009: acepta el correo escrito en mayusculas" time="0.165305">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos;; DROP TABLE tareas; -- en la contrasena" time="0.1221263">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-010: rechaza una contrasena incorrecta con codigo 401" time="0.1987582">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga admin&apos;-- en la contrasena" time="0.1209558">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-011: devuelve el mismo mensaje para usuario inexistente y contrasena mala" time="0.1558717">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos; UNION SELECT token, usuario_id FROM sesiones -- en la contrasena" time="0.1125469">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-012: emite un token distinto en cada inicio de sesion" time="0.233184">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga 1&apos; OR 1=1 -- en la contrasena" time="0.1211962">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/login &gt; CP-I-013: bloquea con codigo 429 tras exceder los intentos permitidos" time="0.3922579">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- en la contrasena" time="0.1097324">
+        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; CP-I-014: devuelve el usuario de la sesion activa" time="0.1023921">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos; OR &apos;&apos;=&apos; en la contrasena" time="0.1057148">
+        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; CP-I-015: rechaza la peticion sin token con codigo 401" time="0.0074112">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga \&apos;; DELETE FROM usuarios; -- en la contrasena" time="0.1000518">
+        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con token inexistente" time="0.0093371">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-003: la tabla de usuarios sigue intacta tras intentar eliminarla" time="0.0609756">
+        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con esquema incorrecto" time="0.0086535">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos; OR &apos;1&apos;=&apos;1 como texto literal" time="0.059816">
+        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con cabecera vacia" time="0.0134968">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos;; DROP TABLE tareas; -- como texto literal" time="0.0592081">
+        <testcase classname="tests/integration/autenticacion.test.js" name="GET /api/auth/yo &gt; rechaza la autorizacion con solo el esquema" time="0.022974">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga admin&apos;-- como texto literal" time="0.0595978">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/logout &gt; CP-I-016: invalida el token de forma que deja de servir" time="0.112099">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos; UNION SELECT token, usuario_id FROM sesiones -- como texto literal" time="0.0670587">
+        <testcase classname="tests/integration/autenticacion.test.js" name="POST /api/auth/logout &gt; no afecta las demas sesiones del mismo usuario" time="0.2881371">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga 1&apos; OR 1=1 -- como texto literal" time="0.0673586">
+        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; GET /api/salud responde que el servicio esta operativo" time="0.0083369">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- como texto literal" time="0.0655454">
+        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; GET /api/catalogos expone los estados y prioridades validos" time="0.0179437">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos; OR &apos;&apos;=&apos; como texto literal" time="0.0505698">
+        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; una ruta de API inexistente devuelve 404 en formato JSON" time="0.0191503">
         </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga \&apos;; DELETE FROM usuarios; -- como texto literal" time="0.0522554">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-005: la tabla de tareas sobrevive a un intento de DROP TABLE" time="0.062907">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-006: un intento de UPDATE masivo no altera otras tareas" time="0.0660923">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos; OR &apos;1&apos;=&apos;1 no expone datos" time="0.0642636">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos;; DROP TABLE tareas; -- no expone datos" time="0.0575655">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda admin&apos;-- no expone datos" time="0.051352">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos; UNION SELECT token, usuario_id FROM sesiones -- no expone datos" time="0.0498644">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda 1&apos; OR 1=1 -- no expone datos" time="0.0557513">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- no expone datos" time="0.0505482">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos; OR &apos;&apos;=&apos; no expone datos" time="0.0523294">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda \&apos;; DELETE FROM usuarios; -- no expone datos" time="0.0515572">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-008: un filtro de estado inyectado se rechaza por validacion" time="0.0487917">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-009: una busqueda inyectada no revela tareas de otros usuarios" time="0.098317">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1 OR 1=1 se rechaza con 400 y no se ejecuta" time="0.0539679">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1; DROP TABLE tareas se rechaza con 400 y no se ejecuta" time="0.0510671">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1&apos;-- se rechaza con 400 y no se ejecuta" time="0.0531702">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1 UNION SELECT 1 se rechaza con 400 y no se ejecuta" time="0.0543492">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Exposicion de informacion sensible &gt; los mensajes de error no revelan detalles de SQL ni rutas internas" time="0.0442651">
-        </testcase>
-        <testcase classname="tests/seguridad/inyeccion.test.js" name="Exposicion de informacion sensible &gt; la API nunca devuelve el token de sesion de otro usuario" time="0.0847056">
+        <testcase classname="tests/integration/autenticacion.test.js" name="Rutas tecnicas &gt; un cuerpo JSON mal formado devuelve 400 y no 500" time="0.0225351">
         </testcase>
     </testsuite>
-    <testsuite name="tests/seguridad/xss-y-cabeceras.test.js" timestamp="2026-10-31T00:20:43.887Z" hostname="Oscar" tests="44" failures="0" errors="0" skipped="0" time="3.0618589">
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;script&gt;alert(1)&lt;/script&gt; sin alterarla" time="0.2150183">
+    <testsuite name="tests/integration/tareas.test.js" timestamp="2026-10-31T03:48:33.934Z" hostname="Oscar" tests="44" failures="0" errors="0" skipped="0" time="4.7519818">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-017: crea una tarea con los valores por defecto" time="0.2637935">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;img src=x onerror=alert(1)&gt; sin alterarla" time="0.1324201">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-018: crea una tarea con todos los campos" time="0.1216785">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;svg/onload=alert(1)&gt; sin alterarla" time="0.0828493">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-019: rechaza una tarea con titulo vacio y devuelve 422" time="0.1441636">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; sin alterarla" time="0.0828203">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-020: rechaza un titulo que solo contiene espacios" time="0.1116711">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;iframe src=javascript:alert(1)&gt; sin alterarla" time="0.0870798">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-021: rechaza un estado fuera del catalogo" time="0.0884466">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;body onload=alert(1)&gt; sin alterarla" time="0.0760921">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-022: rechaza una fecha de vencimiento mal formada" time="0.0805445">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;a href=&quot;javascript:alert(1)&quot;&gt;clic&lt;/a&gt; sin alterarla" time="0.1043575">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-023: normaliza los espacios sobrantes del titulo" time="0.0803403">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-012: la base de datos guarda exactamente el texto recibido" time="0.0794739">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-024: asigna posiciones consecutivas dentro de la misma columna" time="0.1440773">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;script&gt;alert(1)&lt;/script&gt; en la descripcion" time="0.0809289">
+        <testcase classname="tests/integration/tareas.test.js" name="POST /api/tareas &gt; CP-I-025: exige autenticacion" time="0.074383">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;img src=x onerror=alert(1)&gt; en la descripcion" time="0.0639244">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-026: devuelve una lista vacia para un usuario nuevo" time="0.0798263">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;svg/onload=alert(1)&gt; en la descripcion" time="0.0593534">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-027: devuelve todas las tareas del usuario" time="0.0968108">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; en la descripcion" time="0.0737092">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-028: filtra por estado" time="0.107364">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;iframe src=javascript:alert(1)&gt; en la descripcion" time="0.0641954">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-029: filtra por prioridad" time="0.1311174">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;body onload=alert(1)&gt; en la descripcion" time="0.0615381">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-030: busca por texto en titulo y descripcion" time="0.0950556">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;a href=&quot;javascript:alert(1)&quot;&gt;clic&lt;/a&gt; en la descripcion" time="0.0617346">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; CP-I-031: rechaza un filtro de estado invalido" time="0.0936142">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-014: conserva el texto al editar una tarea existente" time="0.0693723">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas &gt; GET /api/tareas/resumen devuelve el conteo por columna" time="0.0992715">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-015: conserva el nombre de usuario tal como se escribio" time="0.1205642">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-032: devuelve una tarea existente" time="0.0844545">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016: elimina los caracteres de control de la entrada" time="0.063199">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-033: devuelve 404 para una tarea inexistente" time="0.0903992">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;script&gt;alert(1)&lt;/script&gt; se sirve como JSON, no como HTML" time="0.0608733">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido abc" time="0.0892636">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;img src=x onerror=alert(1)&gt; se sirve como JSON, no como HTML" time="0.0560013">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido 0" time="0.0843897">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;svg/onload=alert(1)&gt; se sirve como JSON, no como HTML" time="0.0530908">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido -1" time="0.0731526">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; se sirve como JSON, no como HTML" time="0.0562709">
+        <testcase classname="tests/integration/tareas.test.js" name="GET /api/tareas/:id &gt; CP-I-034: devuelve 400 para el identificador invalido 1.5" time="0.1040602">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;iframe src=javascript:alert(1)&gt; se sirve como JSON, no como HTML" time="0.0521834">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-035: edita el titulo de una tarea" time="0.0860343">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;body onload=alert(1)&gt; se sirve como JSON, no como HTML" time="0.0614455">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-036: permite una edicion parcial sin perder los demas campos" time="0.0888365">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;a href=&quot;javascript:alert(1)&quot;&gt;clic&lt;/a&gt; se sirve como JSON, no como HTML" time="0.0599273">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-037: rechaza una edicion que dejaria el titulo vacio" time="0.0864829">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-017: envia X-Content-Type-Options para evitar el sniffing de MIME" time="0.0623549">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-038: al cambiar de columna coloca la tarea al final de la nueva" time="0.1001709">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-018: envia X-Frame-Options para evitar el clickjacking" time="0.0660893">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; CP-I-039: devuelve 404 al editar una tarea inexistente" time="0.0800281">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-019: envia una politica de seguridad de contenido restrictiva" time="0.0641178">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; actualiza la marca de tiempo de modificacion" time="0.1038685">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-020: no revela la tecnologia del servidor en X-Powered-By" time="0.0699656">
+        <testcase classname="tests/integration/tareas.test.js" name="PUT /api/tareas/:id &gt; permite limpiar la fecha de vencimiento enviando cadena vacia" time="0.0889611">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; envia Referrer-Policy" time="0.0519546">
+        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-040: mueve una tarea a otra columna y devuelve el tablero completo" time="0.0826839">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/tareas exige autenticacion" time="0.049245">
+        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-041: reordena las tareas dentro de la misma columna" time="0.0903773">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: POST /api/tareas exige autenticacion" time="0.0553636">
+        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-042: compacta la columna de origen sin dejar huecos" time="0.0957572">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/tareas/1 exige autenticacion" time="0.0532117">
+        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-043: rechaza un estado destino invalido" time="0.0858172">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: PUT /api/tareas/1 exige autenticacion" time="0.0583292">
+        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; CP-I-044: devuelve 404 al mover una tarea inexistente" time="0.0716048">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: PATCH /api/tareas/1/mover exige autenticacion" time="0.0524288">
+        <testcase classname="tests/integration/tareas.test.js" name="PATCH /api/tareas/:id/mover &gt; acota una posicion mayor que el tamano de la columna destino" time="0.0847558">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: DELETE /api/tareas/1 exige autenticacion" time="0.048083">
+        <testcase classname="tests/integration/tareas.test.js" name="DELETE /api/tareas/:id &gt; CP-I-045: elimina una tarea existente" time="0.1109491">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/tareas/resumen exige autenticacion" time="0.0497683">
+        <testcase classname="tests/integration/tareas.test.js" name="DELETE /api/tareas/:id &gt; devuelve 404 al eliminar una tarea inexistente" time="0.0918969">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/auth/yo exige autenticacion" time="0.0495388">
+        <testcase classname="tests/integration/tareas.test.js" name="DELETE /api/tareas/:id &gt; eliminar dos veces la misma tarea devuelve 404 la segunda vez" time="0.0835113">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: POST /api/auth/logout exige autenticacion" time="0.0463698">
+        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-046: un usuario no ve las tareas de otro" time="0.1496104">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-022: un token manipulado no concede acceso" time="0.0488593">
+        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-047: un usuario no puede leer una tarea ajena por su id" time="0.1505751">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-023: un token revocado deja de funcionar de inmediato" time="0.0518509">
+        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-048: un usuario no puede editar una tarea ajena" time="0.1488614">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-024: no se puede escalar privilegios enviando un id de usuario propio" time="0.0996423">
+        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-049: un usuario no puede eliminar una tarea ajena" time="0.1509982">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-025: rechaza un cuerpo de peticion excesivamente grande" time="0.050681">
+        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; CP-I-050: un usuario no puede mover una tarea ajena" time="0.1797086">
         </testcase>
-        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; no permite sobrescribir el id de la tarea desde el cuerpo" time="0.0525571">
+        <testcase classname="tests/integration/tareas.test.js" name="Aislamiento entre usuarios &gt; las posiciones se cuentan por usuario, no de forma global" time="0.1969085">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/seguridad/inyeccion.test.js" timestamp="2026-10-31T03:48:33.944Z" hostname="Oscar" tests="43" failures="0" errors="0" skipped="0" time="4.578448">
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos; OR &apos;1&apos;=&apos;1 en el correo" time="0.3155515">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos;; DROP TABLE tareas; -- en el correo" time="0.10503">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga admin&apos;-- en el correo" time="0.0926569">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos; UNION SELECT token, usuario_id FROM sesiones -- en el correo" time="0.0793949">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga 1&apos; OR 1=1 -- en el correo" time="0.0795935">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- en el correo" time="0.0876662">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga &apos; OR &apos;&apos;=&apos; en el correo" time="0.0835777">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-001: no permite entrar con la carga \&apos;; DELETE FROM usuarios; -- en el correo" time="0.0875567">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos; OR &apos;1&apos;=&apos;1 en la contrasena" time="0.2375244">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos;; DROP TABLE tareas; -- en la contrasena" time="0.1475196">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga admin&apos;-- en la contrasena" time="0.147973">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos; UNION SELECT token, usuario_id FROM sesiones -- en la contrasena" time="0.1433765">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga 1&apos; OR 1=1 -- en la contrasena" time="0.1426202">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- en la contrasena" time="0.156138">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga &apos; OR &apos;&apos;=&apos; en la contrasena" time="0.1615204">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-002: no permite entrar con la carga \&apos;; DELETE FROM usuarios; -- en la contrasena" time="0.1473043">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en el inicio de sesion &gt; CP-S-003: la tabla de usuarios sigue intacta tras intentar eliminarla" time="0.0805227">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos; OR &apos;1&apos;=&apos;1 como texto literal" time="0.0790392">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos;; DROP TABLE tareas; -- como texto literal" time="0.0770349">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga admin&apos;-- como texto literal" time="0.0803046">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos; UNION SELECT token, usuario_id FROM sesiones -- como texto literal" time="0.0836083">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga 1&apos; OR 1=1 -- como texto literal" time="0.0762001">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- como texto literal" time="0.08003">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga &apos; OR &apos;&apos;=&apos; como texto literal" time="0.0762904">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-004: guarda la carga \&apos;; DELETE FROM usuarios; -- como texto literal" time="0.0745239">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-005: la tabla de tareas sobrevive a un intento de DROP TABLE" time="0.0897674">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en la creacion de tareas &gt; CP-S-006: un intento de UPDATE masivo no altera otras tareas" time="0.094959">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos; OR &apos;1&apos;=&apos;1 no expone datos" time="0.0833274">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos;; DROP TABLE tareas; -- no expone datos" time="0.079443">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda admin&apos;-- no expone datos" time="0.0817366">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos; UNION SELECT token, usuario_id FROM sesiones -- no expone datos" time="0.0808155">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda 1&apos; OR 1=1 -- no expone datos" time="0.1049251">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos;; UPDATE tareas SET titulo=&apos;hackeado&apos;; -- no expone datos" time="0.0801673">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda &apos; OR &apos;&apos;=&apos; no expone datos" time="0.0865608">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-007: el filtro de busqueda \&apos;; DELETE FROM usuarios; -- no expone datos" time="0.0888266">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-008: un filtro de estado inyectado se rechaza por validacion" time="0.0761723">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los filtros de busqueda &gt; CP-S-009: una busqueda inyectada no revela tareas de otros usuarios" time="0.1511821">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1 OR 1=1 se rechaza con 400 y no se ejecuta" time="0.0784917">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1; DROP TABLE tareas se rechaza con 400 y no se ejecuta" time="0.0881189">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1&apos;-- se rechaza con 400 y no se ejecuta" time="0.0727041">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Inyeccion SQL en los identificadores de ruta &gt; CP-S-010: el identificador 1 UNION SELECT 1 se rechaza con 400 y no se ejecuta" time="0.0808801">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Exposicion de informacion sensible &gt; los mensajes de error no revelan detalles de SQL ni rutas internas" time="0.0750648">
+        </testcase>
+        <testcase classname="tests/seguridad/inyeccion.test.js" name="Exposicion de informacion sensible &gt; la API nunca devuelve el token de sesion de otro usuario" time="0.1581733">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/seguridad/xss-y-cabeceras.test.js" timestamp="2026-10-31T03:48:33.953Z" hostname="Oscar" tests="44" failures="0" errors="0" skipped="0" time="4.2836933">
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;script&gt;alert(1)&lt;/script&gt; sin alterarla" time="0.3751676">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;img src=x onerror=alert(1)&gt; sin alterarla" time="0.1680074">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;svg/onload=alert(1)&gt; sin alterarla" time="0.0901115">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; sin alterarla" time="0.1514326">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;iframe src=javascript:alert(1)&gt; sin alterarla" time="0.107888">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;body onload=alert(1)&gt; sin alterarla" time="0.120246">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-011: almacena la carga &lt;a href=&quot;javascript:alert(1)&quot;&gt;clic&lt;/a&gt; sin alterarla" time="0.0755078">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-012: la base de datos guarda exactamente el texto recibido" time="0.0960891">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;script&gt;alert(1)&lt;/script&gt; en la descripcion" time="0.0797112">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;img src=x onerror=alert(1)&gt; en la descripcion" time="0.0803577">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;svg/onload=alert(1)&gt; en la descripcion" time="0.0848584">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; en la descripcion" time="0.0805253">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;iframe src=javascript:alert(1)&gt; en la descripcion" time="0.0712349">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;body onload=alert(1)&gt; en la descripcion" time="0.0858649">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-013: conserva la carga &lt;a href=&quot;javascript:alert(1)&quot;&gt;clic&lt;/a&gt; en la descripcion" time="0.0741209">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-014: conserva el texto al editar una tarea existente" time="0.088532">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-015: conserva el nombre de usuario tal como se escribio" time="0.1569267">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016: elimina los caracteres de control de la entrada" time="0.0882166">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;script&gt;alert(1)&lt;/script&gt; se sirve como JSON, no como HTML" time="0.0929009">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;img src=x onerror=alert(1)&gt; se sirve como JSON, no como HTML" time="0.0724747">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;svg/onload=alert(1)&gt; se sirve como JSON, no como HTML" time="0.0826287">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &quot;&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt; se sirve como JSON, no como HTML" time="0.09035">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;iframe src=javascript:alert(1)&gt; se sirve como JSON, no como HTML" time="0.0932085">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;body onload=alert(1)&gt; se sirve como JSON, no como HTML" time="0.0783736">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="XSS almacenado: integridad del dato &gt; CP-S-016b: la respuesta que contiene la carga &lt;a href=&quot;javascript:alert(1)&quot;&gt;clic&lt;/a&gt; se sirve como JSON, no como HTML" time="0.0839215">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-017: envia X-Content-Type-Options para evitar el sniffing de MIME" time="0.1079702">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-018: envia X-Frame-Options para evitar el clickjacking" time="0.0745816">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-019: envia una politica de seguridad de contenido restrictiva" time="0.0771251">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; CP-S-020: no revela la tecnologia del servidor en X-Powered-By" time="0.0724567">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Cabeceras de seguridad &gt; envia Referrer-Policy" time="0.0833485">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/tareas exige autenticacion" time="0.0884725">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: POST /api/tareas exige autenticacion" time="0.0768844">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/tareas/1 exige autenticacion" time="0.0794039">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: PUT /api/tareas/1 exige autenticacion" time="0.076919">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: PATCH /api/tareas/1/mover exige autenticacion" time="0.0715294">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: DELETE /api/tareas/1 exige autenticacion" time="0.0783367">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/tareas/resumen exige autenticacion" time="0.084689">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: GET /api/auth/yo exige autenticacion" time="0.085161">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-021: POST /api/auth/logout exige autenticacion" time="0.0841166">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-022: un token manipulado no concede acceso" time="0.073221">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-023: un token revocado deja de funcionar de inmediato" time="0.0838258">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-024: no se puede escalar privilegios enviando un id de usuario propio" time="0.1544292">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; CP-S-025: rechaza un cuerpo de peticion excesivamente grande" time="0.0841428">
+        </testcase>
+        <testcase classname="tests/seguridad/xss-y-cabeceras.test.js" name="Control de acceso &gt; no permite sobrescribir el id de la tarea desde el cuerpo" time="0.0742191">
         </testcase>
     </testsuite>
 </testsuites>

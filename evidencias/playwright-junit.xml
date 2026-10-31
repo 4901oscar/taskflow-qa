@@ -1,130 +1,130 @@
-<testsuites id="" name="" tests="60" failures="0" skipped="0" errors="0" time="34.19087100000001">
-<testsuite name="autenticacion.spec.js" timestamp="2026-10-31T00:20:47.887Z" hostname="chromium" tests="14" failures="0" skipped="0" time="27.631" errors="0">
-<testcase name="Registro de usuario › CP-E-001: un usuario nuevo se registra y entra al tablero" classname="autenticacion.spec.js" time="2.586">
+<testsuites id="" name="" tests="60" failures="0" skipped="0" errors="0" time="31.152818">
+<testsuite name="autenticacion.spec.js" timestamp="2026-10-31T03:48:37.621Z" hostname="chromium" tests="14" failures="0" skipped="0" time="22.223" errors="0">
+<testcase name="Registro de usuario › CP-E-001: un usuario nuevo se registra y entra al tablero" classname="autenticacion.spec.js" time="2.191">
 </testcase>
-<testcase name="Registro de usuario › CP-E-002: muestra un error al registrarse con una contrasena debil" classname="autenticacion.spec.js" time="2.387">
+<testcase name="Registro de usuario › CP-E-002: muestra un error al registrarse con una contrasena debil" classname="autenticacion.spec.js" time="2.02">
 </testcase>
-<testcase name="Registro de usuario › CP-E-003: muestra un error al registrarse con un correo mal formado" classname="autenticacion.spec.js" time="2.494">
+<testcase name="Registro de usuario › CP-E-003: muestra un error al registrarse con un correo mal formado" classname="autenticacion.spec.js" time="2.157">
 </testcase>
-<testcase name="Registro de usuario › CP-E-004: no permite registrar dos veces el mismo correo" classname="autenticacion.spec.js" time="2.631">
+<testcase name="Registro de usuario › CP-E-004: no permite registrar dos veces el mismo correo" classname="autenticacion.spec.js" time="2.441">
 </testcase>
-<testcase name="Inicio de sesion › CP-E-005: un usuario registrado inicia sesion correctamente" classname="autenticacion.spec.js" time="2.73">
+<testcase name="Inicio de sesion › CP-E-005: un usuario registrado inicia sesion correctamente" classname="autenticacion.spec.js" time="1.659">
 </testcase>
-<testcase name="Inicio de sesion › CP-E-006: muestra un error con la contrasena incorrecta" classname="autenticacion.spec.js" time="2.359">
+<testcase name="Inicio de sesion › CP-E-006: muestra un error con la contrasena incorrecta" classname="autenticacion.spec.js" time="1.532">
 </testcase>
-<testcase name="Inicio de sesion › CP-E-007: muestra un error con un usuario inexistente" classname="autenticacion.spec.js" time="1.279">
+<testcase name="Inicio de sesion › CP-E-007: muestra un error con un usuario inexistente" classname="autenticacion.spec.js" time="1.599">
 </testcase>
-<testcase name="Inicio de sesion › CP-E-008: el mensaje de error no revela si el correo existe" classname="autenticacion.spec.js" time="2.602">
+<testcase name="Inicio de sesion › CP-E-008: el mensaje de error no revela si el correo existe" classname="autenticacion.spec.js" time="2.099">
 </testcase>
-<testcase name="Sesion › CP-E-009: la sesion sobrevive a recargar la pagina" classname="autenticacion.spec.js" time="1.974">
+<testcase name="Sesion › CP-E-009: la sesion sobrevive a recargar la pagina" classname="autenticacion.spec.js" time="1.025">
 </testcase>
-<testcase name="Sesion › CP-E-010: al cerrar sesion vuelve a la pantalla de acceso" classname="autenticacion.spec.js" time="2.015">
+<testcase name="Sesion › CP-E-010: al cerrar sesion vuelve a la pantalla de acceso" classname="autenticacion.spec.js" time="1.165">
 </testcase>
-<testcase name="Sesion › CP-E-011: tras cerrar sesion la recarga no devuelve el acceso" classname="autenticacion.spec.js" time="1.68">
+<testcase name="Sesion › CP-E-011: tras cerrar sesion la recarga no devuelve el acceso" classname="autenticacion.spec.js" time="1.946">
 </testcase>
-<testcase name="Sesion › CP-E-012: un token invalido en el navegador no da acceso" classname="autenticacion.spec.js" time="0.88">
+<testcase name="Sesion › CP-E-012: un token invalido en el navegador no da acceso" classname="autenticacion.spec.js" time="0.631">
 </testcase>
-<testcase name="Navegacion entre pestanas › alterna entre los formularios de acceso y registro" classname="autenticacion.spec.js" time="1.021">
+<testcase name="Navegacion entre pestanas › alterna entre los formularios de acceso y registro" classname="autenticacion.spec.js" time="0.748">
 </testcase>
-<testcase name="Navegacion entre pestanas › cambiar de pestana limpia el mensaje de error anterior" classname="autenticacion.spec.js" time="0.993">
-</testcase>
-</testsuite>
-<testsuite name="seguridad.spec.js" timestamp="2026-10-31T00:20:47.887Z" hostname="chromium" tests="10" failures="0" skipped="0" time="16.157" errors="0">
-<testcase name="XSS en el navegador › CP-E-041: una etiqueta script en el titulo no se ejecuta" classname="seguridad.spec.js" time="1.816">
-</testcase>
-<testcase name="XSS en el navegador › CP-E-042: un atributo onerror en el titulo no dispara ningun dialogo" classname="seguridad.spec.js" time="2.234">
-</testcase>
-<testcase name="XSS en el navegador › CP-E-043: la carga no inserta elementos nuevos en el DOM" classname="seguridad.spec.js" time="1.64">
-</testcase>
-<testcase name="XSS en el navegador › CP-E-044: el texto que escribe el usuario se muestra tal cual" classname="seguridad.spec.js" time="1.255">
-</testcase>
-<testcase name="XSS en el navegador › CP-E-045: una comilla en el titulo se muestra sin codificar" classname="seguridad.spec.js" time="1.402">
-</testcase>
-<testcase name="XSS en el navegador › CP-E-046: una barra en el titulo se muestra sin codificar" classname="seguridad.spec.js" time="1.387">
-</testcase>
-<testcase name="Aislamiento de la sesion en el navegador › el token se borra del almacenamiento local al cerrar sesion" classname="seguridad.spec.js" time="1.541">
-</testcase>
-<testcase name="Aislamiento de la sesion en el navegador › la aplicacion no expone la contrasena en el almacenamiento local" classname="seguridad.spec.js" time="1.235">
-</testcase>
-<testcase name="Robustez de la interfaz › un titulo muy largo no rompe el diseno del tablero" classname="seguridad.spec.js" time="1.555">
-</testcase>
-<testcase name="Robustez de la interfaz › la interfaz sigue siendo usable en viewport movil" classname="seguridad.spec.js" time="2.092">
+<testcase name="Navegacion entre pestanas › cambiar de pestana limpia el mensaje de error anterior" classname="autenticacion.spec.js" time="1.01">
 </testcase>
 </testsuite>
-<testsuite name="tablero.spec.js" timestamp="2026-10-31T00:20:47.887Z" hostname="chromium" tests="13" failures="0" skipped="0" time="27.089" errors="0">
-<testcase name="Arrastrar y soltar › CP-E-029: arrastra una tarea de pendientes a en progreso" classname="tablero.spec.js" time="1.909">
+<testsuite name="seguridad.spec.js" timestamp="2026-10-31T03:48:37.621Z" hostname="chromium" tests="10" failures="0" skipped="0" time="14.819" errors="0">
+<testcase name="XSS en el navegador › CP-E-041: una etiqueta script en el titulo no se ejecuta" classname="seguridad.spec.js" time="1.289">
 </testcase>
-<testcase name="Arrastrar y soltar › CP-E-030: arrastra una tarea hasta la columna de completadas" classname="tablero.spec.js" time="2.019">
+<testcase name="XSS en el navegador › CP-E-042: un atributo onerror en el titulo no dispara ningun dialogo" classname="seguridad.spec.js" time="1.965">
 </testcase>
-<testcase name="Arrastrar y soltar › CP-E-031: el movimiento por arrastre persiste tras recargar" classname="tablero.spec.js" time="2.162">
+<testcase name="XSS en el navegador › CP-E-043: la carga no inserta elementos nuevos en el DOM" classname="seguridad.spec.js" time="2.148">
 </testcase>
-<testcase name="Arrastrar y soltar › CP-E-032: arrastrar una tarea entre columnas deja la de origen vacia" classname="tablero.spec.js" time="2.149">
+<testcase name="XSS en el navegador › CP-E-044: el texto que escribe el usuario se muestra tal cual" classname="seguridad.spec.js" time="1.203">
 </testcase>
-<testcase name="Arrastrar y soltar › CP-E-033: mover una tarea no altera el resto del tablero" classname="tablero.spec.js" time="2.506">
+<testcase name="XSS en el navegador › CP-E-045: una comilla en el titulo se muestra sin codificar" classname="seguridad.spec.js" time="1.11">
 </testcase>
-<testcase name="Arrastrar y soltar › CP-E-034: reordena una tarea dentro de la misma columna" classname="tablero.spec.js" time="2.903">
+<testcase name="XSS en el navegador › CP-E-046: una barra en el titulo se muestra sin codificar" classname="seguridad.spec.js" time="1.313">
 </testcase>
-<testcase name="Arrastrar y soltar › CP-E-035: mueve varias tareas a la misma columna conservando el orden" classname="tablero.spec.js" time="2.861">
+<testcase name="Aislamiento de la sesion en el navegador › el token se borra del almacenamiento local al cerrar sesion" classname="seguridad.spec.js" time="1.099">
 </testcase>
-<testcase name="Mover con el menu desplegable › CP-E-036: mueve una tarea a en progreso con el selector" classname="tablero.spec.js" time="2.155">
+<testcase name="Aislamiento de la sesion en el navegador › la aplicacion no expone la contrasena en el almacenamiento local" classname="seguridad.spec.js" time="1.072">
 </testcase>
-<testcase name="Mover con el menu desplegable › CP-E-037: mueve una tarea a completadas con el selector" classname="tablero.spec.js" time="1.757">
+<testcase name="Robustez de la interfaz › un titulo muy largo no rompe el diseno del tablero" classname="seguridad.spec.js" time="2.176">
 </testcase>
-<testcase name="Mover con el menu desplegable › CP-E-038: el selector refleja la columna actual de la tarea" classname="tablero.spec.js" time="1.574">
-</testcase>
-<testcase name="Mover con el menu desplegable › el movimiento por menu persiste tras recargar" classname="tablero.spec.js" time="1.612">
-</testcase>
-<testcase name="Contadores de columna › CP-E-039: los contadores arrancan en cero" classname="tablero.spec.js" time="1.287">
-</testcase>
-<testcase name="Contadores de columna › CP-E-040: los contadores reflejan la distribucion real del tablero" classname="tablero.spec.js" time="2.195">
+<testcase name="Robustez de la interfaz › la interfaz sigue siendo usable en viewport movil" classname="seguridad.spec.js" time="1.444">
 </testcase>
 </testsuite>
-<testsuite name="tareas.spec.js" timestamp="2026-10-31T00:20:47.887Z" hostname="chromium" tests="23" failures="0" skipped="0" time="44.055" errors="0">
-<testcase name="Crear tareas › CP-E-013: crea una tarea y aparece en la columna de pendientes" classname="tareas.spec.js" time="1.6">
+<testsuite name="tablero.spec.js" timestamp="2026-10-31T03:48:37.621Z" hostname="chromium" tests="13" failures="0" skipped="0" time="25.895" errors="0">
+<testcase name="Arrastrar y soltar › CP-E-029: arrastra una tarea de pendientes a en progreso" classname="tablero.spec.js" time="1.649">
 </testcase>
-<testcase name="Crear tareas › CP-E-014: crea una tarea con prioridad alta y fecha de vencimiento" classname="tareas.spec.js" time="1.894">
+<testcase name="Arrastrar y soltar › CP-E-030: arrastra una tarea hasta la columna de completadas" classname="tablero.spec.js" time="1.369">
 </testcase>
-<testcase name="Crear tareas › CP-E-015: no crea una tarea con titulo vacio y muestra el error" classname="tareas.spec.js" time="1.61">
+<testcase name="Arrastrar y soltar › CP-E-031: el movimiento por arrastre persiste tras recargar" classname="tablero.spec.js" time="1.617">
 </testcase>
-<testcase name="Crear tareas › CP-E-016: no crea una tarea cuyo titulo solo tiene espacios" classname="tareas.spec.js" time="1.595">
+<testcase name="Arrastrar y soltar › CP-E-032: arrastrar una tarea entre columnas deja la de origen vacia" classname="tablero.spec.js" time="1.692">
 </testcase>
-<testcase name="Crear tareas › CP-E-017: no crea una tarea con titulo de menos de 3 caracteres" classname="tareas.spec.js" time="1.597">
+<testcase name="Arrastrar y soltar › CP-E-033: mover una tarea no altera el resto del tablero" classname="tablero.spec.js" time="3.676">
 </testcase>
-<testcase name="Crear tareas › CP-E-018: limpia el formulario despues de crear la tarea" classname="tareas.spec.js" time="1.813">
+<testcase name="Arrastrar y soltar › CP-E-034: reordena una tarea dentro de la misma columna" classname="tablero.spec.js" time="1.96">
 </testcase>
-<testcase name="Crear tareas › CP-E-019: crea varias tareas y las muestra en orden de creacion" classname="tareas.spec.js" time="2.082">
+<testcase name="Arrastrar y soltar › CP-E-035: mueve varias tareas a la misma columna conservando el orden" classname="tablero.spec.js" time="2.065">
 </testcase>
-<testcase name="Editar tareas › CP-E-020: edita el titulo de una tarea existente" classname="tareas.spec.js" time="2.095">
+<testcase name="Mover con el menu desplegable › CP-E-036: mueve una tarea a en progreso con el selector" classname="tablero.spec.js" time="1.819">
 </testcase>
-<testcase name="Editar tareas › CP-E-021: agrega una descripcion desde el dialogo de edicion" classname="tareas.spec.js" time="2.028">
+<testcase name="Mover con el menu desplegable › CP-E-037: mueve una tarea a completadas con el selector" classname="tablero.spec.js" time="2.76">
 </testcase>
-<testcase name="Editar tareas › CP-E-022: cambia la prioridad desde el dialogo de edicion" classname="tareas.spec.js" time="1.733">
+<testcase name="Mover con el menu desplegable › CP-E-038: el selector refleja la columna actual de la tarea" classname="tablero.spec.js" time="1.592">
 </testcase>
-<testcase name="Editar tareas › CP-E-023: rechaza la edicion que deja el titulo vacio" classname="tareas.spec.js" time="1.977">
+<testcase name="Mover con el menu desplegable › el movimiento por menu persiste tras recargar" classname="tablero.spec.js" time="1.435">
 </testcase>
-<testcase name="Editar tareas › CP-E-024: cancelar la edicion descarta los cambios" classname="tareas.spec.js" time="1.968">
+<testcase name="Contadores de columna › CP-E-039: los contadores arrancan en cero" classname="tablero.spec.js" time="2.288">
 </testcase>
-<testcase name="Editar tareas › el dialogo precarga los valores actuales de la tarea" classname="tareas.spec.js" time="1.903">
+<testcase name="Contadores de columna › CP-E-040: los contadores reflejan la distribucion real del tablero" classname="tablero.spec.js" time="1.973">
 </testcase>
-<testcase name="Eliminar tareas › CP-E-025: elimina una tarea del tablero" classname="tareas.spec.js" time="1.741">
+</testsuite>
+<testsuite name="tareas.spec.js" timestamp="2026-10-31T03:48:37.621Z" hostname="chromium" tests="23" failures="0" skipped="0" time="36.792" errors="0">
+<testcase name="Crear tareas › CP-E-013: crea una tarea y aparece en la columna de pendientes" classname="tareas.spec.js" time="1.436">
 </testcase>
-<testcase name="Eliminar tareas › CP-E-026: eliminar una tarea no afecta a las demas" classname="tareas.spec.js" time="1.809">
+<testcase name="Crear tareas › CP-E-014: crea una tarea con prioridad alta y fecha de vencimiento" classname="tareas.spec.js" time="1.497">
 </testcase>
-<testcase name="Eliminar tareas › la eliminacion persiste tras recargar la pagina" classname="tareas.spec.js" time="1.781">
+<testcase name="Crear tareas › CP-E-015: no crea una tarea con titulo vacio y muestra el error" classname="tareas.spec.js" time="2.451">
 </testcase>
-<testcase name="Filtros y busqueda › CP-E-027: filtra las tareas por texto de busqueda" classname="tareas.spec.js" time="2.119">
+<testcase name="Crear tareas › CP-E-016: no crea una tarea cuyo titulo solo tiene espacios" classname="tareas.spec.js" time="1.077">
 </testcase>
-<testcase name="Filtros y busqueda › CP-E-028: filtra las tareas por prioridad" classname="tareas.spec.js" time="2.33">
+<testcase name="Crear tareas › CP-E-017: no crea una tarea con titulo de menos de 3 caracteres" classname="tareas.spec.js" time="1.253">
 </testcase>
-<testcase name="Filtros y busqueda › la busqueda no distingue mayusculas de minusculas" classname="tareas.spec.js" time="2.297">
+<testcase name="Crear tareas › CP-E-018: limpia el formulario despues de crear la tarea" classname="tareas.spec.js" time="1.243">
 </testcase>
-<testcase name="Filtros y busqueda › limpiar el filtro restaura todas las tareas" classname="tareas.spec.js" time="2.405">
+<testcase name="Crear tareas › CP-E-019: crea varias tareas y las muestra en orden de creacion" classname="tareas.spec.js" time="1.557">
 </testcase>
-<testcase name="Filtros y busqueda › una busqueda sin resultados deja el tablero vacio" classname="tareas.spec.js" time="2.353">
+<testcase name="Editar tareas › CP-E-020: edita el titulo de una tarea existente" classname="tareas.spec.js" time="1.412">
 </testcase>
-<testcase name="Persistencia › las tareas creadas siguen ahi despues de recargar" classname="tareas.spec.js" time="1.666">
+<testcase name="Editar tareas › CP-E-021: agrega una descripcion desde el dialogo de edicion" classname="tareas.spec.js" time="1.434">
 </testcase>
-<testcase name="Persistencia › las tareas no se comparten entre usuarios distintos" classname="tareas.spec.js" time="1.659">
+<testcase name="Editar tareas › CP-E-022: cambia la prioridad desde el dialogo de edicion" classname="tareas.spec.js" time="2.92">
+</testcase>
+<testcase name="Editar tareas › CP-E-023: rechaza la edicion que deja el titulo vacio" classname="tareas.spec.js" time="1.387">
+</testcase>
+<testcase name="Editar tareas › CP-E-024: cancelar la edicion descarta los cambios" classname="tareas.spec.js" time="1.247">
+</testcase>
+<testcase name="Editar tareas › el dialogo precarga los valores actuales de la tarea" classname="tareas.spec.js" time="1.421">
+</testcase>
+<testcase name="Eliminar tareas › CP-E-025: elimina una tarea del tablero" classname="tareas.spec.js" time="1.294">
+</testcase>
+<testcase name="Eliminar tareas › CP-E-026: eliminar una tarea no afecta a las demas" classname="tareas.spec.js" time="1.534">
+</testcase>
+<testcase name="Eliminar tareas › la eliminacion persiste tras recargar la pagina" classname="tareas.spec.js" time="1.289">
+</testcase>
+<testcase name="Filtros y busqueda › CP-E-027: filtra las tareas por texto de busqueda" classname="tareas.spec.js" time="3.169">
+</testcase>
+<testcase name="Filtros y busqueda › CP-E-028: filtra las tareas por prioridad" classname="tareas.spec.js" time="1.51">
+</testcase>
+<testcase name="Filtros y busqueda › la busqueda no distingue mayusculas de minusculas" classname="tareas.spec.js" time="1.394">
+</testcase>
+<testcase name="Filtros y busqueda › limpiar el filtro restaura todas las tareas" classname="tareas.spec.js" time="1.712">
+</testcase>
+<testcase name="Filtros y busqueda › una busqueda sin resultados deja el tablero vacio" classname="tareas.spec.js" time="1.596">
+</testcase>
+<testcase name="Persistencia › las tareas creadas siguen ahi despues de recargar" classname="tareas.spec.js" time="1.335">
+</testcase>
+<testcase name="Persistencia › las tareas no se comparten entre usuarios distintos" classname="tareas.spec.js" time="1.624">
 </testcase>
 </testsuite>
 </testsuites>

@@ -13,6 +13,7 @@ evidencias/*
 !evidencias/vitest-junit.xml
 !evidencias/playwright-junit.xml
 !evidencias/rendimiento.json
+!evidencias/rendimiento-informe.json
 !evidencias/metricas.json
 
 # Sistema operativo y editores

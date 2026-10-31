@@ -195,56 +195,62 @@ sesión. Total: **550 peticiones** lanzadas en paralelo.
 
 ### 5.2 Resultados finales
 
-Ejecución registrada en `evidencias/rendimiento.json`:
+La ejecución que se analiza aquí quedó archivada en
+`evidencias/rendimiento-informe.json`. Se conserva como copia aparte porque
+`evidencias/rendimiento.json` se sobrescribe en cada ejecución de la prueba de
+carga, y las cifras de este informe deben seguir siendo verificables aunque la
+suite vuelva a correrse.
 
 | Operación | Peticiones | Promedio | p50 | p95 | p99 | Máximo |
 |---|---|---|---|---|---|---|
-| `registro` | 50 | 579.50 ms | 569.29 ms | 960.21 ms | 1021.77 ms | 1021.77 ms |
-| `login` | 50 | 384.35 ms | 357.94 ms | 628.26 ms | 648.02 ms | 648.02 ms |
-| `crear_tarea` | 250 | 45.39 ms | 44.62 ms | 84.88 ms | 94.00 ms | 124.82 ms |
-| `listar_tareas` | 50 | 43.56 ms | 46.16 ms | 64.80 ms | 85.25 ms | 85.25 ms |
-| `resumen` | 50 | 42.64 ms | 41.23 ms | 75.17 ms | 82.18 ms | 82.18 ms |
-| `mover_tarea` | 50 | 42.23 ms | 42.17 ms | 75.04 ms | 87.89 ms | 87.89 ms |
-| `editar_tarea` | 50 | 39.42 ms | 36.44 ms | 66.24 ms | 80.11 ms | 80.11 ms |
+| `registro` | 50 | 647.92 ms | 654.15 ms | 1018.23 ms | 1062.70 ms | 1062.70 ms |
+| `login` | 50 | 227.06 ms | 199.71 ms | 346.51 ms | 453.45 ms | 453.45 ms |
+| `crear_tarea` | 250 | 67.33 ms | 70.54 ms | 88.22 ms | 118.20 ms | 119.95 ms |
+| `listar_tareas` | 50 | 64.84 ms | 64.83 ms | 90.29 ms | 117.51 ms | 117.51 ms |
+| `resumen` | 50 | 61.40 ms | 63.79 ms | 90.07 ms | 118.03 ms | 118.03 ms |
+| `mover_tarea` | 50 | 56.77 ms | 49.57 ms | 86.91 ms | 119.36 ms | 119.36 ms |
+| `editar_tarea` | 50 | 50.14 ms | 44.38 ms | 82.77 ms | 86.11 ms | 86.11 ms |
 
 | Agrupación | Peticiones | Promedio | p95 |
 |---|---|---|---|
-| CRUD de tareas | 450 | 43.87 ms | 80.11 ms |
-| Autenticación | 100 | 481.92 ms | 919.10 ms |
+| CRUD de tareas | 450 | 63.31 ms | 87.87 ms |
+| Autenticación | 100 | 437.49 ms | 975.24 ms |
 
 | Métrica global | Valor |
 |---|---|
-| Duración total | 1.74 s |
-| Rendimiento | 315.44 peticiones/s |
+| Duración total | 1.83 s |
+| Rendimiento | 300.11 peticiones/s |
 | Tasa de error | 0 % (0 de 550) |
 
 ### 5.3 Variabilidad entre ejecuciones
 
-Una sola medición no es un resultado. Se ejecutó la prueba **tres veces
-consecutivas** en la misma máquina para cuantificar la dispersión:
+Una sola medición no es un resultado. La prueba se ejecutó **cuatro veces** en
+la misma máquina para cuantificar la dispersión. La cuarta es la ejecución
+archivada que se detalla en el apartado anterior:
 
-| Métrica | Ejec. 1 | Ejec. 2 | Ejec. 3 | Rango |
-|---|---|---|---|---|
-| Rendimiento (pet/s) | 342.08 | 295.87 | 318.91 | 296 – 342 |
-| CRUD, promedio | 39.35 ms | 60.29 ms | 48.05 ms | 39 – 60 ms |
-| CRUD, p95 | 57.24 ms | 126.05 ms | 81.13 ms | 57 – 126 ms |
-| Autenticación, promedio | 455.22 ms | 462.17 ms | 458.95 ms | 455 – 462 ms |
-| Autenticación, p95 | 869.59 ms | 993.52 ms | 854.09 ms | 854 – 994 ms |
+| Métrica | Ejec. 1 | Ejec. 2 | Ejec. 3 | Ejec. 4 (archivada) | Rango |
+|---|---|---|---|---|---|
+| Rendimiento (pet/s) | 342.08 | 295.87 | 318.91 | 300.11 | 296 – 342 |
+| CRUD, promedio | 39.35 ms | 60.29 ms | 48.05 ms | 63.31 ms | 39 – 63 ms |
+| CRUD, p95 | 57.24 ms | 126.05 ms | 81.13 ms | 87.87 ms | 57 – 126 ms |
+| Autenticación, promedio | 455.22 ms | 462.17 ms | 458.95 ms | 437.49 ms | 437 – 462 ms |
+| Autenticación, p95 | 869.59 ms | 993.52 ms | 854.09 ms | 975.24 ms | 854 – 993 ms |
 
-El tiempo de autenticación es muy estable (variación menor al 2 %) porque está
+El tiempo de autenticación es estable (variación menor al 6 %) porque está
 dominado por el costo fijo de scrypt. Las operaciones de CRUD, mucho más
 rápidas, muestran una dispersión relativa mayor: a esa escala influyen la carga
-del sistema operativo y el recolector de basura. Las tres ejecuciones cumplen
-los cinco criterios con holgura.
+del sistema operativo y el recolector de basura. Las cuatro ejecuciones cumplen
+los cinco criterios con holgura, y la peor de todas (p95 del CRUD de 126 ms)
+queda a menos de la cuarta parte de su umbral.
 
 ### 5.4 Criterios de salida
 
 | Criterio | Umbral | Medido | Estado |
 |---|---|---|---|
-| p95 del CRUD de tareas | ≤ 500 ms | 80.11 ms | CUMPLE |
-| Promedio del CRUD de tareas | ≤ 200 ms | 43.87 ms | CUMPLE |
-| p95 de autenticación | ≤ 1500 ms | 919.10 ms | CUMPLE |
-| Promedio de autenticación | ≤ 1000 ms | 481.92 ms | CUMPLE |
+| p95 del CRUD de tareas | ≤ 500 ms | 87.87 ms | CUMPLE |
+| Promedio del CRUD de tareas | ≤ 200 ms | 63.31 ms | CUMPLE |
+| p95 de autenticación | ≤ 1500 ms | 975.24 ms | CUMPLE |
+| Promedio de autenticación | ≤ 1000 ms | 437.49 ms | CUMPLE |
 | Tasa de error | ≤ 1 % | 0 % | CUMPLE |
 
 ### 5.5 El defecto que solo la concurrencia podía revelar
@@ -373,12 +379,12 @@ toda la suite.
 
 | Acción del usuario | Tiempo medido |
 |---|---|
-| Crear una tarea | 45.39 ms promedio |
-| Cargar el tablero | 43.56 ms promedio |
-| Mover una tarea | 42.23 ms promedio |
-| Editar una tarea | 39.42 ms promedio |
-| Iniciar sesión | 384.35 ms promedio |
-| Crear una cuenta | 579.50 ms promedio |
+| Crear una tarea | 67.33 ms promedio |
+| Cargar el tablero | 64.84 ms promedio |
+| Mover una tarea | 56.77 ms promedio |
+| Editar una tarea | 50.14 ms promedio |
+| Iniciar sesión | 227.06 ms promedio |
+| Crear una cuenta | 647.92 ms promedio |
 
 Todas las operaciones interactivas están por debajo de los 100 ms, el umbral
 habitual para que una interfaz se perciba como instantánea.
@@ -431,7 +437,7 @@ Se recomienda aprobar la entrega, con estas reservas explícitas:
 2. **Sin pruebas de accesibilidad.** No se verificó navegación por teclado con
    lector de pantalla. El menú desplegable para mover tareas existe como
    alternativa al arrastre, pero no está validado con tecnología asistiva.
-3. **Carga medida en un solo nodo y en local.** Los ~315 pet/s se midieron en
+3. **Carga medida en un solo nodo y en local.** Los ~300 pet/s se midieron en
    una máquina de desarrollo contra SQLite en memoria. No predicen el
    comportamiento con red, disco real ni concurrencia mayor.
 4. **No se probó el volumen de datos.** El escenario usa 5 tareas por usuario.

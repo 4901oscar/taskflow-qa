@@ -87,7 +87,12 @@ lineas.total = lineas.aplicacion + lineas.pruebas;
 const vitest = leerJunit('evidencias/vitest-junit.xml');
 const playwright = leerJunit('evidencias/playwright-junit.xml');
 const cobertura = leerJson('evidencias/cobertura/coverage-summary.json');
-const rendimiento = leerJson('evidencias/rendimiento.json');
+
+// Se prefiere la ejecucion archivada que cita el informe final. El archivo
+// rendimiento.json se sobrescribe en cada prueba de carga, asi que tomarlo
+// directamente hacia que las metricas dejaran de coincidir con el informe.
+const rendimiento =
+  leerJson('evidencias/rendimiento-informe.json') ?? leerJson('evidencias/rendimiento.json');
 
 const totalPruebas = (vitest?.total ?? 0) + (playwright?.total ?? 0);
 const totalExitosas = (vitest?.exitosas ?? 0) + (playwright?.exitosas ?? 0);
